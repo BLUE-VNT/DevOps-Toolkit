@@ -8,7 +8,7 @@ DevOps Toolkit là kho tài liệu được duy trì thường xuyên về vận
 
 ### VPN
 
-- [Triển khai OpenVPN Access Server bằng Docker Compose (tiếng Trung)](vpn/openvpn-as.md)
+- [Triển khai OpenVPN Access Server bằng Docker Compose (tiếng Trung)](vpn/00%20-%20openvpn-as.md)
 
 ## Hướng dẫn sử dụng
 

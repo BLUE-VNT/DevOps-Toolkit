@@ -8,7 +8,7 @@ DevOps Toolkit 是一个持续维护的运维与部署资料库，收录常用�
 
 ### VPN
 
-- [使用 Docker Compose 部署 OpenVPN Access Server](vpn/openvpn-as.md)
+- [使用 Docker Compose 部署 OpenVPN Access Server](vpn/00%20-%20openvpn-as.md)
 
 ## 使用说明
 

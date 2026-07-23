@@ -8,7 +8,7 @@ DevOps Toolkit is a maintained collection of operations and deployment resources
 
 ### VPN
 
-- [Deploy OpenVPN Access Server with Docker Compose (Chinese)](vpn/openvpn-as.md)
+- [Deploy OpenVPN Access Server with Docker Compose (Chinese)](vpn/00%20-%20openvpn-as.md)
 
 ## Usage
 
