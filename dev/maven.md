@@ -102,8 +102,6 @@ export NEXUS_PASSWORD='你的Nexus密码'
 ```
 
 
-
-
 ## java project
 
 ```pom
@@ -125,3 +123,5 @@ export NEXUS_PASSWORD='你的Nexus密码'
     </snapshotRepository>
 </distributionManagement>
 ```
+
+![img.png](assert/mvn.png)
