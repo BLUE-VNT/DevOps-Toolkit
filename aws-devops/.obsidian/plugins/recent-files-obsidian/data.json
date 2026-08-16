@@ -1,0 +1,104 @@
+{
+  "recentFiles": [
+    {
+      "basename": "36-Routing-Security-Matrix",
+      "path": "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png"
+    },
+    {
+      "basename": "35-Network-Overview",
+      "path": "3-Resources/31-Operations-Proposal/35-Network-Overview.png"
+    },
+    {
+      "basename": "34-Multi-Account-Architecture",
+      "path": "3-Resources/31-Operations-Proposal/34-Multi-Account-Architecture.png"
+    },
+    {
+      "basename": "33-Architecture-Report-VI",
+      "path": "3-Resources/31-Operations-Proposal/33-Architecture-Report-VI.pdf"
+    },
+    {
+      "basename": "32-Architecture-Report-ZH",
+      "path": "3-Resources/31-Operations-Proposal/32-Architecture-Report-ZH.pdf"
+    },
+    {
+      "basename": "31-GitOps-Architecture",
+      "path": "3-Resources/30-Architecture-Diagrams/31-GitOps-Architecture.png"
+    },
+    {
+      "basename": "30-Dual-Bastion-Architecture",
+      "path": "3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png"
+    },
+    {
+      "basename": "00-Index-ZH",
+      "path": "0-System/00-Index/00-Index-ZH.md"
+    },
+    {
+      "basename": "00-Index",
+      "path": "00-Index.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "AGENTS.md"
+    },
+    {
+      "basename": "Account Index",
+      "path": "20-Areas/云资源运营/10-Providers/Alibaba Cloud/Accounts/hlfksy/Account Index.md"
+    },
+    {
+      "basename": "Alibaba Cloud Index",
+      "path": "20-Areas/云资源运营/10-Providers/Alibaba Cloud/Alibaba Cloud Index.md"
+    },
+    {
+      "basename": "Index",
+      "path": "Index.md"
+    },
+    {
+      "basename": "Log",
+      "path": "Log.md"
+    },
+    {
+      "basename": "Linux 常用命令",
+      "path": "30-Resources/Linux/Linux 常用命令.md"
+    },
+    {
+      "basename": "Docker 常用命令",
+      "path": "30-Resources/Docker/Docker 常用命令.md"
+    },
+    {
+      "basename": "Resources Index",
+      "path": "30-Resources/Resources Index.md"
+    },
+    {
+      "basename": "settings",
+      "path": "design-system/cloud-resource-vault/pages/settings.md"
+    },
+    {
+      "basename": "Account Resources",
+      "path": "20-Areas/云资源运营/10-Providers/Alibaba Cloud/Accounts/hlfksy/Account Resources.base"
+    },
+    {
+      "basename": "Account Resources",
+      "path": "20-Areas/云资源运营/10-Providers/Alibaba Cloud/Accounts/nick3217384838/Account Resources.base"
+    },
+    {
+      "basename": "Account Index",
+      "path": "20-Areas/云资源运营/10-Providers/Alibaba Cloud/Accounts/nick3217384838/Account Index.md"
+    },
+    {
+      "basename": "Inbox Index",
+      "path": "00-Inbox/Inbox Index.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "CLAUDE",
+      "path": "CLAUDE.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

@@ -1,0 +1,68 @@
+{
+  "dualConfigs": false,
+  "showConsoleLog": false,
+  "desktop": {
+    "shortDelaySeconds": 5,
+    "longDelaySeconds": 15,
+    "delayBetweenPlugins": 40,
+    "defaultStartupType": null,
+    "showDescriptions": true,
+    "enableDependencies": false,
+    "plugins": {
+      "table-editor-obsidian": {
+        "startupType": "instant"
+      },
+      "obsidian42-brat": {
+        "startupType": "instant"
+      },
+      "calendar": {
+        "startupType": "instant"
+      },
+      "cmdr": {
+        "startupType": "instant"
+      },
+      "editing-toolbar": {
+        "startupType": "instant"
+      },
+      "obsidian-excalidraw-plugin": {
+        "startupType": "instant"
+      },
+      "folder-quick-switcher": {
+        "startupType": "instant"
+      },
+      "obsidian-git": {
+        "startupType": "instant"
+      },
+      "obsidian-importer": {
+        "startupType": "instant"
+      },
+      "obsidian-kanban": {
+        "startupType": "instant"
+      },
+      "obsidian-markmind": {
+        "startupType": "disabled"
+      },
+      "obsidian-outliner": {
+        "startupType": "disabled"
+      },
+      "pdf-plus": {
+        "startupType": "disabled"
+      },
+      "quick-explorer": {
+        "startupType": "disabled"
+      },
+      "recent-files-obsidian": {
+        "startupType": "disabled"
+      },
+      "remotely-save": {
+        "startupType": "disabled"
+      },
+      "templater-obsidian": {
+        "startupType": "disabled"
+      },
+      "terminal": {
+        "startupType": "disabled"
+      }
+    }
+  }
+}

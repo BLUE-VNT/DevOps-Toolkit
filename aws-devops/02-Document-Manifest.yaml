@@ -1,0 +1,154 @@
+schema_version: 1
+knowledge_base: AWS 部署
+organization: PARA
+languages:
+  - zh-CN
+  - en
+  - vi-VN
+default_language: zh-CN
+translation_strategy: sibling-files
+translation_migration_status: complete
+language_suffixes:
+  zh-CN: ZH
+  en: EN
+  vi-VN: VI
+updated: 2026-08-16
+encoding: UTF-8
+assets:
+  - path: 3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png
+    type: architecture-diagram
+    used_by: bastion-access-architecture
+    sha256: 60b380fd49a4572a8af263dad04535bbed6aa9ca25a57f1df37e2068d84f3eb8
+  - path: 3-Resources/30-Architecture-Diagrams/31-GitOps-Architecture.png
+    type: architecture-diagram
+    used_by: gitops-architecture-review
+    sha256: 6f1029287e0000266cee54b6e8d9c168bbd610dbfa4f6b55401fe82802d1a9c0
+  - path: 3-Resources/31-Operations-Proposal/32-Architecture-Report-ZH.pdf
+    type: source-report
+    used_by: operations-proposal-review
+    sha256: bfba39bc68a82db06152465ccf3854c353434f2c75f58e3a0688be37c9952225
+  - path: 3-Resources/31-Operations-Proposal/33-Architecture-Report-VI.pdf
+    type: source-report
+    used_by: operations-proposal-review
+    sha256: 1f350e774edc4e8652e0c9d5ff592eee57dd8e1b528bf324a08e6d3791fa5bb3
+  - path: 3-Resources/31-Operations-Proposal/34-Multi-Account-Architecture.png
+    type: architecture-diagram
+    used_by: operations-proposal-review
+    sha256: 1f30069e523230d997ce396dc26936ed875b3e8bb81facc8fa1b46a6bdbbc715
+  - path: 3-Resources/31-Operations-Proposal/35-Network-Overview.png
+    type: architecture-diagram
+    used_by: operations-proposal-review
+    sha256: 81d4200ccc2dc533ea02ed6f9ed960297af863f222928451d0a147a57a376412
+  - path: 3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png
+    type: architecture-diagram
+    used_by: operations-proposal-review
+    sha256: c05ed21e92dd9e25c53a844184954dd28a3b3d61c44f78541b7a71c14ec3d311
+entrypoints:
+  human: 00-Index.md
+  ai: AGENTS.md
+  changelog: 0-System/01-Change-Log/01-Change-Log.md
+  language_guide: 0-System/02-Documentation/03-Language-Guide.md
+multilingual_rules:
+  pattern: "<Name>-<ZH|EN|VI>.md"
+  required_switcher: true
+  semantic_parity_required: true
+  translate_code_blocks: false
+  translate_identifiers: false
+translation_groups:
+  - id: agents
+    base: AGENTS
+    status: synchronized
+  - id: readme
+    base: README
+    status: synchronized
+  - id: language-guide
+    base: 0-System/02-Documentation/03-Language-Guide
+    status: synchronized
+  - id: index
+    base: 0-System/00-Index/00-Index
+    status: synchronized
+  - id: change-log
+    base: 0-System/01-Change-Log/01-Change-Log
+    status: synchronized
+  - id: release-process
+    base: 1-Projects/10-Release-Process/10-Release-Process
+    status: synchronized
+  - id: gitops-architecture-review
+    base: 1-Projects/11-GitOps-Architecture-Review/11-GitOps-Architecture-Review
+    status: synchronized
+  - id: operations-proposal-review
+    base: 1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review
+    status: synchronized
+  - id: deployment-checklist
+    base: 1-Projects/12-Deployment-Management/12-Deployment-Checklist
+    status: synchronized
+  - id: change-request-template
+    base: 1-Projects/12-Deployment-Management/13-Change-Request-Template
+    status: synchronized
+  - id: account-architecture
+    base: 2-Areas/20-Account-Architecture/20-Account-Architecture
+    status: synchronized
+  - id: bastion-access-architecture
+    base: 2-Areas/21-Bastion-Access/21-Bastion-Access-Architecture
+    status: synchronized
+  - id: break-glass-access
+    base: 2-Areas/22-Break-Glass-Access/22-Break-Glass-Access
+    status: synchronized
+  - id: legacy-index
+    base: 4-Archives/90-Legacy-Index/90-Legacy-Index
+    status: synchronized
+status_semantics:
+  approved-baseline: 当前有效制度
+  active: 持续使用或维护
+  proposed: 尚未批准的提案
+  draft: 草案
+  template: 模板
+  archived: 历史资料
+documents:
+  - path: 1-Projects/10-Release-Process/10-Release-Process.md
+    title: 发布流程
+    para: project
+    status: approved-baseline
+    authority: canonical
+  - path: 1-Projects/11-GitOps-Architecture-Review/11-GitOps-Architecture-Review.md
+    title: GitOps 发布架构评审
+    para: project
+    status: proposed
+    decision: pending
+    authority: proposal
+  - path: 1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review.md
+    title: 运维架构方案归纳与评审
+    para: project
+    status: proposed
+    decision: pending
+    authority: proposal-review
+  - path: 1-Projects/12-Deployment-Management/12-Deployment-Checklist.md
+    title: 部署检查清单
+    para: project
+    status: active
+    authority: operational
+  - path: 1-Projects/12-Deployment-Management/13-Change-Request-Template.md
+    title: 变更单模板
+    para: project
+    status: template
+    authority: operational
+  - path: 2-Areas/20-Account-Architecture/20-Account-Architecture.md
+    title: 架构与账户规划
+    para: area
+    status: draft
+    authority: reference
+  - path: 2-Areas/21-Bastion-Access/21-Bastion-Access-Architecture.md
+    title: 堡垒机访问架构
+    para: area
+    status: draft
+    authority: reference
+  - path: 2-Areas/22-Break-Glass-Access/22-Break-Glass-Access.md
+    title: 破窗账户管理
+    para: area
+    status: draft
+    authority: reference
+  - path: 4-Archives/90-Legacy-Index/90-Legacy-Index.md
+    title: AWS 部署索引（旧版）
+    para: archive
+    status: archived
+    authority: historical

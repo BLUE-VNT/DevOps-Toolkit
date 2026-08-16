@@ -1,0 +1,266 @@
+{
+  "main": {
+    "id": "54af8d994831595c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e933a0347199fe52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "11e8047a8002e9c0",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png"
+              },
+              "icon": "lucide-image",
+              "title": "36-Routing-Security-Matrix"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "adb28ae40169ce96",
+    "type": "split",
+    "children": [
+      {
+        "id": "01bd013585e77ba7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eebb97a2dda8de0c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "4bbfbe4e2da53d2d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "01c1b7768726ba16",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "3ad04247603fd31b",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5cb0d1061cd16c2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "80989bdc7383f268",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73cf538adf3de14f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "a519da65f8cee65f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "c880929f34f68a45",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "55069deaefe247cb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "5fab6346bd59be86",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "c9e7f2eb235cca35",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian42-brat:BRAT": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-importer:Open Importer": false,
+      "obsidian-kanban:Create new board": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "remotely-save:Remotely Save": false,
+      "templater-obsidian:Templater": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "11e8047a8002e9c0",
+  "lastOpenFiles": [
+    "3-Resources/31-Operations-Proposal/35-Network-Overview.png",
+    "3-Resources/31-Operations-Proposal/34-Multi-Account-Architecture.png",
+    "3-Resources/31-Operations-Proposal/33-Architecture-Report-VI.pdf",
+    "3-Resources/31-Operations-Proposal/32-Architecture-Report-ZH.pdf",
+    "3-Resources/30-Architecture-Diagrams/31-GitOps-Architecture.png",
+    "3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png",
+    "0-System/00-Index/00-Index-ZH.md",
+    "00-Index.md",
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-VI.md",
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-EN.md",
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md",
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review.md",
+    "1-Projects/14-Operations-Proposal-Review",
+    "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
+    "3-Resources/31-Operations-Proposal",
+    "4-Archives/90-Legacy-Index/90-Legacy-Index-VI.md",
+    "4 Archives/90-Legacy-Index.md",
+    "4-Archives/90-Legacy-Index/90-Legacy-Index-EN.md",
+    "4-Archives/90-Legacy-Index/90-Legacy-Index-ZH.md",
+    "4-Archives/90-Legacy-Index/90-Legacy-Index.md",
+    "2-Areas/22-Break-Glass-Access/22-Break-Glass-Access-VI.md",
+    "2-Areas/22-Break-Glass-Access/22-Break-Glass-Access-EN.md",
+    "2-Areas/22-Break-Glass-Access/22-Break-Glass-Access-ZH.md",
+    "2-Areas/22-Break-Glass-Access/22-Break-Glass-Access.md",
+    "2-Areas/21-Bastion-Access/21-Bastion-Access-Architecture-VI.md",
+    "2-Areas/21-Bastion-Access/21-Bastion-Access-Architecture-EN.md",
+    "2-Areas/21-Bastion-Access/21-Bastion-Access-Architecture-ZH.md",
+    "2-Areas/21-Bastion-Access/21-Bastion-Access-Architecture.md",
+    "2-Areas/20-Account-Architecture/20-Account-Architecture-VI.md",
+    "2-Areas/20-Account-Architecture/20-Account-Architecture-EN.md",
+    "2-Areas/20-Account-Architecture/20-Account-Architecture-ZH.md",
+    "2-Areas/20-Account-Architecture/20-Account-Architecture.md",
+    "1-Projects/12-Deployment-Management/13-Change-Request-Template-VI.md",
+    "1-Projects/12-Deployment-Management/13-Change-Request-Template-EN.md",
+    "4-Archives/90-Legacy-Index",
+    "4-Archives",
+    "3-Resources/30-Architecture-Diagrams",
+    "3-Resources",
+    "2-Areas/22-Break-Glass-Access",
+    "2-Areas/21-Bastion-Access",
+    "3 Resources/30-Dual-Bastion-Architecture.png",
+    "3 Resources/31-GitOps-Architecture.png"
+  ]
+}
