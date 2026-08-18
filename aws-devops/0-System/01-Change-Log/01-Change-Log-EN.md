@@ -9,6 +9,11 @@ status: active
 # Change Log
 [[01-Change-Log-ZH|中文]] · [[01-Change-Log-EN|English]] · [[01-Change-Log-VI|Tiếng Việt]]
 
+## 2026-08-18 — Archive the version 1 AWS multi-account diagram
+- Archived the user-provided version 1 architecture overview as a 2× PNG under `3-Resources/30-Architecture-Diagrams`.
+- Embedded it in the ZH, EN, and VI operations proposal review documents and marked it as reference material only.
+- Kept the proposal `proposed / pending`; no approved release or security baseline changed.
+
 ## 2026-08-16 — Operations proposal review
 - Archived the ZH/VI reports and three A3 diagrams with SHA-256 values.
 - Added a trilingual review covering accounts, networking, release controls, cost, and security.

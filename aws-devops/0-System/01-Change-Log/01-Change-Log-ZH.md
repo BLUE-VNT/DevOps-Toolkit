@@ -17,6 +17,12 @@ document_role: changelog
 
 [[01-Change-Log-ZH|中文]] · [[01-Change-Log-EN|English]] · [[01-Change-Log-VI|Tiếng Việt]]
 
+## 2026-08-18 — 归档第一版 AWS 多账号架构图
+
+- 将用户提供的第一版架构总览图以 2× 高清 PNG 归档到 `3-Resources/30-Architecture-Diagrams`。
+- 将图片嵌入运维架构方案评审的中、英、越文档，并明确其仅为参考资料。
+- 保持方案 `proposed / pending`，未改变任何已批准的发布或安全基线。
+
 ## 2026-08-16 — 运维方案资料归档与评审
 
 - 归档中、越文架构报告和三张 A3 架构图，并记录 SHA-256。
