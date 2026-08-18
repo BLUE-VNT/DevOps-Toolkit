@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e933a0347199fe52",
+        "id": "63a80184e093d80a",
         "type": "tabs",
         "children": [
           {
-            "id": "11e8047a8002e9c0",
+            "id": "eeadccdc427753c4",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png"
+                "file": "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "36-Routing-Security-Matrix"
+              "icon": "lucide-file",
+              "title": "14-Operations-Proposal-Review-ZH"
             }
           }
         ]
@@ -53,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "32-AWS-Multi-Account-Architecture-Overview-v1-HD",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +85,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent files"
+              "icon": "lucide-ghost",
+              "title": "recent-files"
             }
           }
         ]
@@ -184,8 +186,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ]
@@ -207,19 +209,22 @@
       "obsidian42-brat:BRAT": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-importer:Open Importer": false,
       "obsidian-kanban:Create new board": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "remotely-save:Remotely Save": false,
       "templater-obsidian:Templater": false,
       "terminal:Open terminal": false
     }
   },
-  "active": "11e8047a8002e9c0",
+  "active": "eebb97a2dda8de0c",
   "lastOpenFiles": [
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-VI.md",
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-EN.md",
+    "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg",
+    "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.png",
+    "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
     "3-Resources/31-Operations-Proposal/35-Network-Overview.png",
     "3-Resources/31-Operations-Proposal/34-Multi-Account-Architecture.png",
     "3-Resources/31-Operations-Proposal/33-Architecture-Report-VI.pdf",
@@ -228,12 +233,9 @@
     "3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png",
     "0-System/00-Index/00-Index-ZH.md",
     "00-Index.md",
-    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-VI.md",
-    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-EN.md",
     "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md",
     "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review.md",
     "1-Projects/14-Operations-Proposal-Review",
-    "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
     "3-Resources/31-Operations-Proposal",
     "4-Archives/90-Legacy-Index/90-Legacy-Index-VI.md",
     "4 Archives/90-Legacy-Index.md",

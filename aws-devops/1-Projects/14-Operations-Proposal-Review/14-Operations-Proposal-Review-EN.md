@@ -7,7 +7,7 @@ translation_status: synchronized
 status: proposed
 decision: pending
 para: project
-updated: 2026-08-16
+updated: 2026-08-18
 source_type: external-proposal
 ---
 
@@ -29,6 +29,12 @@ The proposal uses four AWS Accounts, three isolated workload VPCs, PrivateLink s
 ![[35-Network-Overview.png]]
 
 ![[36-Routing-Security-Matrix.png]]
+
+### Version 1 Architecture Overview (User-provided)
+
+This diagram is archived as the first-version reference for the operations proposal review. It is not an approved implementation baseline; the proposal remains `proposed / pending`.
+
+![[32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg]]
 
 ## Account and network model
 

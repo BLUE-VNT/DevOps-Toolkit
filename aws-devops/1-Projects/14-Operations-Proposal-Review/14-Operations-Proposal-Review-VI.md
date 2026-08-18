@@ -7,7 +7,7 @@ translation_status: synchronized
 status: proposed
 decision: pending
 para: project
-updated: 2026-08-16
+updated: 2026-08-18
 source_type: external-proposal
 ---
 
@@ -29,6 +29,12 @@ source_type: external-proposal
 ![[35-Network-Overview.png]]
 
 ![[36-Routing-Security-Matrix.png]]
+
+### Tổng quan kiến trúc phiên bản 1 (do người dùng cung cấp)
+
+Sơ đồ này được lưu trữ như tài liệu tham khảo phiên bản đầu tiên cho đề xuất vận hành. Đây không phải là đường cơ sở triển khai đã được phê duyệt; đề xuất vẫn giữ trạng thái `proposed / pending`.
+
+![[32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg]]
 
 ## Mô hình tài khoản và mạng
 

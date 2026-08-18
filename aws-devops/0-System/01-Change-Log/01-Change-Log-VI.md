@@ -9,6 +9,11 @@ status: active
 # Nhật ký thay đổi
 [[01-Change-Log-ZH|中文]] · [[01-Change-Log-EN|English]] · [[01-Change-Log-VI|Tiếng Việt]]
 
+## 18/08/2026 — Lưu trữ sơ đồ AWS đa tài khoản phiên bản 1
+- Lưu sơ đồ tổng quan phiên bản 1 do người dùng cung cấp dưới dạng PNG 2× trong `3-Resources/30-Architecture-Diagrams`.
+- Nhúng sơ đồ vào tài liệu đánh giá đề xuất vận hành bằng ZH, EN và VI, đồng thời ghi rõ đây chỉ là tài liệu tham khảo.
+- Giữ đề xuất ở trạng thái `proposed / pending`; không thay đổi đường cơ sở phát hành hoặc bảo mật đã được phê duyệt.
+
 ## 16/08/2026 — Đánh giá đề xuất vận hành
 - Lưu trữ báo cáo ZH/VI và ba sơ đồ A3 cùng giá trị SHA-256.
 - Thêm bản đánh giá ba ngôn ngữ về tài khoản, mạng, kiểm soát phát hành, chi phí và bảo mật.

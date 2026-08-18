@@ -10,12 +10,5 @@
   "obsidian-importer",
   "obsidian-kanban",
   "lazy-plugins",
-  "obsidian-markmind",
-  "obsidian-outliner",
-  "pdf-plus",
-  "quick-explorer",
-  "recent-files-obsidian",
-  "remotely-save",
-  "templater-obsidian",
-  "terminal"
+  "remotely-save"
 ]

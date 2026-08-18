@@ -12,7 +12,7 @@ language_suffixes:
   zh-CN: ZH
   en: EN
   vi-VN: VI
-updated: 2026-08-16
+updated: 2026-08-18
 encoding: UTF-8
 assets:
   - path: 3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png
@@ -23,6 +23,12 @@ assets:
     type: architecture-diagram
     used_by: gitops-architecture-review
     sha256: 6f1029287e0000266cee54b6e8d9c168bbd610dbfa4f6b55401fe82802d1a9c0
+  - path: 3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.png
+    type: architecture-diagram
+    used_by: operations-proposal-review
+    source: user-provided-reference
+    status: proposed
+    sha256: b82ebff85b7356805eb5e27753b579275e2418484d92891536043b2eb113f323
   - path: 3-Resources/31-Operations-Proposal/32-Architecture-Report-ZH.pdf
     type: source-report
     used_by: operations-proposal-review

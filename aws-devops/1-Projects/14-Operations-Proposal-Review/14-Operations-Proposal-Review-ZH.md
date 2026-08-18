@@ -7,7 +7,7 @@ translation_status: synchronized
 status: proposed
 decision: pending
 para: project
-updated: 2026-08-16
+updated: 2026-08-18
 source_type: external-proposal
 ---
 
@@ -37,6 +37,12 @@ source_type: external-proposal
 ### 路由与安全控制矩阵
 
 ![[36-Routing-Security-Matrix.png]]
+
+### 第一版架构总览（用户提供）
+
+该图作为本次运维方案评审的第一版架构参考资料归档；图中内容不代表已批准的实施基线，当前方案仍保持 `proposed / pending`。
+
+![[32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg]]
 
 ## 账号与网络模型
 
