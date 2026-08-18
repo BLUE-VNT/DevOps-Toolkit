@@ -8,7 +8,7 @@
 | 1 | Chrome-Plugin-Xiaohongshu-Downloader | [Git repository](https://github.com/BLUE-VNT/Chrome-Plugin-Xiaohongshu-Downloader) | A Chrome extension for downloading images and videos from Xiaohongshu (RedNote). It supports single-note downloads, media selection, batch URL downloads, ZIP archives, local history, custom filenames, and duplicate protection. |
 | 2 | Chrome-Plugin-Facebook-Downloader | [Git repository](https://github.com/BLUE-VNT/Chrome-Plugin-Facebook-Downloader) | A Chrome extension for saving Facebook photos and videos already available in the signed-in browser session. It supports posts, Reels, Watch, Stories, Home Feed scanning, batch downloads, ZIP archives, and local DASH-to-MP4 remuxing. |
 | 3 | Chrome-Plugin-Instagram-Downloader | [Git repository](https://github.com/BLUE-VNT/Chrome-Plugin-Instagram-Downloader) | A Chrome extension for saving supported Instagram and Threads images and videos. It provides inline controls, multi-item selection, profile and feed scanning, individual or ZIP downloads, history, custom naming, and duplicate detection. |
-| 4 | Chrome-Plugin-Twitter-Downloader | [Git repository](https://github.com/BLUE-VNT/Chrome-Plugin-Twitter-Downloader) | A Chrome extension for downloading original-quality photos and the highest-bitrate MP4 media exposed by X/Twitter posts. It supports selective post downloads, self-threads, filtered batch downloads, ZIP archives, local history, statistics, and duplicate protection. |
+| 4 | Chrome-Plugin-Twitter-Downloader | [Git repository](https://github.com/BLUE-VNT/Chrome-Plugin-Twitter-Downloader) | A Chrome extension that discovers media exposed by X/Twitter page responses and downloads original-quality photos and the highest-bitrate MP4 media. It supports selective post and self-thread downloads, filtered batch downloads, ZIP archives, local history, statistics, duplicate protection, and optional reply translation. |
 | 5 | Chrome-Plugin-Bilibili-Downloader | [Git repository](https://github.com/BLUE-VNT/Chrome-Plugin-Bilibili-Downloader) | A Chrome extension for downloading Bilibili videos, audio, thumbnails, images, and comments. It supports local DASH-to-MP4 muxing, page scanning, batch and ZIP downloads, player enhancements, AI subtitle translation, and 16 UI languages. |
 
 ## Project Details
@@ -103,10 +103,11 @@
 
 - **Git repository:**
   <https://github.com/BLUE-VNT/Chrome-Plugin-Twitter-Downloader>
-- **Purpose:** The extension simplifies discovering, selecting, and saving
-  media already exposed by X/Twitter pages. It provides per-post and batch
-  workflows while keeping media detection, download history, and statistics in
-  the browser.
+- **Purpose:** The extension observes X/Twitter page responses to discover
+  supported media and lets users download it per post, per loaded self-thread, or
+  in batches. Media detection, settings, download history, statistics, and
+  translation cache remain in the browser; enabled translation, reporting, or
+  update services use their configured endpoints.
 - **Core features:**
   - Downloads original-size photos, the highest-bitrate available MP4 video,
     and animated GIF posts as their MP4 media variants.
@@ -114,28 +115,36 @@
     individual items, with automatic retry and explicit redownload confirmation
     for posts already recorded as successful.
   - Detects media posts from the root author in a loaded self-thread and
-    downloads them sequentially in chronological order while excluding replies
-    from other accounts.
+    downloads them sequentially in tweet-ID order, which normally follows
+    chronological order, while excluding replies from other accounts.
   - Scans media already detected in the active tab, filters saved posts,
-    reposts, photos, or videos, and downloads visible results as separate files
+    reposts, photos, or videos, and downloads the filtered results as separate files
     or a ZIP archive.
   - Supports configurable output directories and filename tokens, local
     IndexedDB history, duplicate protection, and a 30-day statistics dashboard
     with success rates and frequently downloaded accounts.
-  - Provides a localized interface with English, Vietnamese, and Simplified
-    Chinese resources in the inspected checkout.
-  - Additional owner-confirmed capabilities pending synchronization with the
-    inspected local and GitHub repositories include an About page, update
-    checking, a user rating prompt, and translation for comments and replies.
-  - Limits host access to X/Twitter and their image and video hosts. It uses
-    responses already requested by the page rather than issuing independent
-    GraphQL requests, and it does not bypass authentication or access controls.
+  - Provides a localized interface in English, Vietnamese, Simplified Chinese,
+    Spanish, Portuguese (Brazil), German, French, Japanese, Korean, and Indonesian.
+  - Includes an About panel, a user rating prompt after successful downloads,
+    and configurable update checking. Update checking only makes a network
+    request when `UPDATE_CHECK_URL` is supplied at build time.
+  - Provides optional on-demand and automatic translation of visible or nearby
+    replies. Users can select Google Translate, DeepSeek, ChatGPT/Codex, or a
+    custom OpenAI-compatible provider; requests are subject to the configured
+    endpoint, credentials, concurrency, and per-page budget.
+  - Uses page responses already requested by X/Twitter rather than issuing its
+  own X GraphQL requests, and does not bypass X/Twitter access controls. Host
+    access covers X/Twitter, media hosts, built-in
+    translation providers, and optionally configured reporting, update, or custom
+    translation endpoints; custom endpoint access is requested as an optional
+    host permission.
 - **Use cases:** Saving authorized X/Twitter media for offline access, archiving
-  public or permitted posts and self-threads, and organizing batches of photos,
-  videos, or animated media for later review.
+  public or permitted posts and self-threads, translating replies when configured,
+  and organizing batches of photos, videos, or animated media for later review.
 - **Technology:** A Chrome Manifest V3 extension built with WXT, TypeScript,
   React 18, JSZip, IndexedDB through `idb`, Recharts, and the Chrome Extension
-  API. It uses Vitest, jsdom, fake IndexedDB, Prettier, and TypeScript checks for
+  API. It uses Jest with ts-jest and jsdom, fake IndexedDB, Prettier, ESLint,
+  TypeScript checks, production builds, and generated-manifest checks for
   automated verification.
 
 ### 5. Chrome-Plugin-Bilibili-Downloader
