@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "00-Index-ZH",
+      "path": "0-System/00-Index/00-Index-ZH.md"
+    },
+    {
+      "basename": "00-Index",
+      "path": "00-Index.md"
+    },
+    {
+      "basename": "32-AWS-Multi-Account-Architecture-Overview-v1-HD",
+      "path": "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg"
+    },
+    {
       "basename": "14-Operations-Proposal-Review-ZH",
       "path": "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md"
     },
@@ -11,10 +23,6 @@
     {
       "basename": "14-Operations-Proposal-Review-EN",
       "path": "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-EN.md"
-    },
-    {
-      "basename": "32-AWS-Multi-Account-Architecture-Overview-v1-HD",
-      "path": "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg"
     },
     {
       "basename": "36-Routing-Security-Matrix",
@@ -43,14 +51,6 @@
     {
       "basename": "30-Dual-Bastion-Architecture",
       "path": "3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png"
-    },
-    {
-      "basename": "00-Index-ZH",
-      "path": "0-System/00-Index/00-Index-ZH.md"
-    },
-    {
-      "basename": "00-Index",
-      "path": "00-Index.md"
     },
     {
       "basename": "AGENTS",

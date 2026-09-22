@@ -11,14 +11,12 @@
             "id": "eeadccdc427753c4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md",
-                "mode": "source",
-                "source": false
+                "file": "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg"
               },
-              "icon": "lucide-file",
-              "title": "14-Operations-Proposal-Review-ZH"
+              "icon": "lucide-image",
+              "title": "32-AWS-Multi-Account-Architecture-Overview-v1-HD"
             }
           }
         ]
@@ -210,30 +208,25 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-importer:Open Importer": false,
-      "obsidian-kanban:Create new board": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "templater-obsidian:Templater": false,
-      "terminal:Open terminal": false
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "eebb97a2dda8de0c",
+  "active": "eeadccdc427753c4",
   "lastOpenFiles": [
+    "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
+    "0-System/00-Index/00-Index-ZH.md",
+    "00-Index.md",
+    "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg",
+    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md",
     "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-VI.md",
     "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-EN.md",
-    "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.jpg",
     "3-Resources/30-Architecture-Diagrams/32-AWS-Multi-Account-Architecture-Overview-v1-HD.png",
-    "3-Resources/31-Operations-Proposal/36-Routing-Security-Matrix.png",
     "3-Resources/31-Operations-Proposal/35-Network-Overview.png",
     "3-Resources/31-Operations-Proposal/34-Multi-Account-Architecture.png",
     "3-Resources/31-Operations-Proposal/33-Architecture-Report-VI.pdf",
     "3-Resources/31-Operations-Proposal/32-Architecture-Report-ZH.pdf",
     "3-Resources/30-Architecture-Diagrams/31-GitOps-Architecture.png",
     "3-Resources/30-Architecture-Diagrams/30-Dual-Bastion-Architecture.png",
-    "0-System/00-Index/00-Index-ZH.md",
-    "00-Index.md",
-    "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review-ZH.md",
     "1-Projects/14-Operations-Proposal-Review/14-Operations-Proposal-Review.md",
     "1-Projects/14-Operations-Proposal-Review",
     "3-Resources/31-Operations-Proposal",
