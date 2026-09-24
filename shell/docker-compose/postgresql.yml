@@ -1,0 +1,60 @@
+services:
+  postgresql17:
+    image: 'postgres:17'
+    container_name: postgresql17-gitlab
+    hostname: postgresql17
+    restart: unless-stopped
+    network_mode: host
+    shm_size: '256m'
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 'PostgresAdminChangeMe'
+      POSTGRES_DB: postgres
+      GITLAB_DB_USER: gitlabhq
+      GITLAB_DB_PASSWORD: 'GrzRC8Uw5pPsNYbG5P6DuNtYxDUJNKYY'
+      GITLAB_DB_NAME: gitlabhq_production
+      POSTGRES_INITDB_ARGS: '--encoding=UTF8 --locale=C'
+    volumes:
+      - './data:/var/lib/postgresql/data'
+      - './init:/docker-entrypoint-initdb.d:ro'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U postgres -h 127.0.0.1 -p 5432']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    command:
+      - postgres
+      - -c
+      - listen_addresses=127.0.0.1
+      - -c
+      - port=5432
+      - -c
+      - max_connections=200
+      - -c
+      - shared_buffers=256MB
+      - -c
+      - effective_cache_size=768MB
+      - -c
+      - maintenance_work_mem=128MB
+      - -c
+      - checkpoint_completion_target=0.9
+      - -c
+      - wal_buffers=16MB
+      - -c
+      - default_statistics_target=100
+      - -c
+      - random_page_cost=1.1
+      - -c
+      - effective_io_concurrency=200
+      - -c
+      - work_mem=8MB
+      - -c
+      - min_wal_size=1GB
+      - -c
+      - max_wal_size=4GB
+      - -c
+      - log_timezone=Asia/Ho_Chi_Minh
+      - -c
+      - timezone=Asia/Ho_Chi_Minh

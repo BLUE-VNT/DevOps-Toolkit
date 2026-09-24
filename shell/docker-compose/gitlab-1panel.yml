@@ -1,0 +1,77 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  gitlab:
+    cap_add:
+      - NET_ADMIN
+    container_name: ${CONTAINER_NAME}
+    deploy:
+      resources:
+        limits:
+          cpus: ${CPUS}
+          memory: ${MEMORY_LIMIT}
+    environment:
+      TZ: ${TIME_ZONE}
+      GITLAB_OMNIBUS_CONFIG: |
+        gitlab_rails['gitlab_shell_ssh_port'] = 8082
+        gitlab_rails['databases']['ci']['enable'] = false
+        # ============================================================
+        # External Redis (bundled disabled)
+        # ============================================================
+        redis['enable'] = false
+        gitlab_rails['redis_host'] = '1Panel-redis-Oq2E'
+        gitlab_rails['redis_port'] = 6379
+        gitlab_rails['redis_password'] = 'redis_TyGnk3'
+        
+        # ============================================================
+        # External PostgreSQL (bundled disabled)
+        # ============================================================
+        postgresql['enable'] = false
+        postgresql['ssl'] = 'off'
+        gitlab_rails['db_adapter'] = 'postgresql'
+        gitlab_rails['db_encoding'] = 'utf8'
+        gitlab_rails['db_host'] = '1Panel-postgresql-3fUv'
+        gitlab_rails['db_port'] = 5432
+        gitlab_rails['db_username'] = 'user_PaRefG'
+        gitlab_rails['db_password'] = 'password_iQNHsz'
+        gitlab_rails['db_connect_timeout'] = 8
+        # ============================================================
+        # Logging
+        # ============================================================
+        logging['logrotate_frequency'] = "daily"
+        logging['logrotate_rotate'] = 30
+        logging['logrotate_size'] = "100M"
+        gitlab_shell['log_level'] = 'WARN'
+        # ============================================================
+        # Registry / Pages (disabled)
+        # ============================================================
+        registry['enable'] = false
+        registry['log_level'] = 'warn'
+        gitlab_pages['enable'] = false
+        # ============================================================
+        # Monitoring
+        # Do NOT set grafana[*] or mattermost[*] — removed from Omnibus
+        # ============================================================
+        prometheus['enable'] = false
+        alertmanager['enable'] = false
+        postgres_exporter['enable'] = false
+        redis_exporter['enable'] = false
+        # ============================================================
+        # Puma / Workhorse / Sidekiq / Gitaly / KAS
+        # ============================================================
+        puma['worker_processes'] = 4
+    image: gitlab/gitlab-ee:19.4.0-ee.0
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
+    ports:
+      - ${HOST_IP}:${PANEL_APP_PORT_HTTP}:80
+      - ${HOST_IP}:${PANEL_APP_PORT_SSH}:22
+    restart: always
+    shm_size: ${SHM_SIZE}
+    volumes:
+      - ./data/config:/etc/gitlab
+      - ./data/logs:/var/log/gitlab
+      - ./data/data:/var/opt/gitlab

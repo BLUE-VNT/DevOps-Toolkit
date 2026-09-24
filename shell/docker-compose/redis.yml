@@ -1,0 +1,17 @@
+services:
+  redis72:
+    image: 'redis:7.2'
+    container_name: redis72-gitlab
+    hostname: redis72
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - './data:/data'
+      - './redis.conf:/usr/local/etc/redis/redis.conf:ro'
+    command: ['redis-server', '/usr/local/etc/redis/redis.conf']
+    healthcheck:
+      test: ['CMD', 'redis-cli', '-h', '127.0.0.1', '-p', '6379', 'ping']
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
