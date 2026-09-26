@@ -14,6 +14,8 @@ services:
     environment:
       TZ: ${TIME_ZONE}
       GITLAB_OMNIBUS_CONFIG: |
+        external_url 'https://gitlab.bluesix.xyz'
+        gitlab_rails['gitlab_ssh_host'] = 'gitlab.bluesix.xyz'
         gitlab_rails['gitlab_shell_ssh_port'] = 8082
         gitlab_rails['databases']['ci']['enable'] = false
         # ============================================================
@@ -61,6 +63,12 @@ services:
         # Puma / Workhorse / Sidekiq / Gitaly / KAS
         # ============================================================
         puma['worker_processes'] = 4
+        # ============================================================
+        # NGINX (GitLab 19.2+: rails settings under gitlab_rails['nginx'])
+        # ============================================================
+        nginx['listen_port'] = 80
+        nginx['listen_https'] = false
+        letsencrypt['enable'] = false
     image: gitlab/gitlab-ee:19.4.0-ee.0
     labels:
       createdBy: Apps
