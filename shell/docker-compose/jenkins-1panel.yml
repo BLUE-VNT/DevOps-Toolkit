@@ -1,0 +1,25 @@
+networks:
+  1panel-network:
+    external: true
+services:
+  jenkins:
+    container_name: ${CONTAINER_NAME}
+    deploy:
+      resources:
+        limits:
+          cpus: ${CPUS}
+          memory: ${MEMORY_LIMIT}
+    image: jenkins/jenkins:2.568.3-lts
+    labels:
+      createdBy: Apps
+    networks:
+      - 1panel-network
+    ports:
+      - ${HOST_IP}:${PANEL_APP_PORT_HTTP}:8080
+    privileged: true
+    restart: always
+    user: root
+    volumes:
+      - ./data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${DOCKER_BINARY}:${DOCKER_BINARY}
