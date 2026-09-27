@@ -1,0 +1,18 @@
+#cat /etc/nginx-ui/.install_secret
+#3ec7768bcd9e1f6bf76370a994141701e28de37e9df8b304747bfd74d4ef9237
+services:
+  nginx-ui:
+    stdin_open: true
+    tty: true
+    container_name: nginx-ui
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - './nginx:/etc/nginx'
+      - '.appdata/nginx-ui:/etc/nginx-ui'
+      - '/opt/1panel/www:/var/www'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    ports:
+      - 8086:9000
+    image: 'uozi/nginx-ui:latest'
