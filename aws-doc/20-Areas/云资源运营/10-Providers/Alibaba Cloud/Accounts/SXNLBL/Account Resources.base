@@ -1,0 +1,24 @@
+filters:
+  and:
+    - type == "cloud-resource"
+    - provider == "aliyun"
+    - account_id == "SXNLBL"
+    - status != "archived"
+properties:
+  file.name: {displayName: 资源}
+  service: {displayName: 产品}
+  resource_type: {displayName: 类型}
+  environment: {displayName: 环境}
+  region: {displayName: Region}
+  status: {displayName: 状态}
+  criticality: {displayName: 重要级别}
+  expires: {displayName: 到期日期}
+views:
+  - type: table
+    name: 按产品
+    groupBy: {property: service, direction: ASC}
+    order: [file.name, service, resource_type, environment, region, status, criticality, expires]
+  - type: table
+    name: 按环境
+    groupBy: {property: environment, direction: ASC}
+    order: [file.name, environment, service, region, status, criticality, expires]

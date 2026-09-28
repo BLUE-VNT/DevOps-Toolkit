@@ -1,0 +1,10 @@
+{
+  "id": "folder-quick-switcher",
+  "name": "Folder Quick Switcher",
+  "version": "0.1.1",
+  "minAppVersion": "1.5.0",
+  "description": "Quickly search and reveal folders in the Obsidian file explorer.",
+  "author": "mingnify",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}

@@ -1,0 +1,23 @@
+filters:
+  and:
+    - 'type == "cloud-resource"'
+    - 'provider == "tencent-cloud"'
+    - 'status != "archived"'
+properties:
+  file.name: {displayName: 资源}
+  account_id: {displayName: 账号}
+  service: {displayName: 产品}
+  environment: {displayName: 环境}
+  region: {displayName: Region}
+  status: {displayName: 状态}
+  expires: {displayName: 到期日期}
+views:
+  - type: table
+    name: 按账号
+    groupBy: {property: account_id, direction: ASC}
+    order: [file.name, account_id, service, environment, region, status, expires]
+  - type: table
+    name: 按产品
+    groupBy: {property: service, direction: ASC}
+    order: [file.name, service, account_id, environment, region, status, expires]
+

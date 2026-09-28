@@ -1,0 +1,84 @@
+filters:
+  and:
+    - type == "cloud-resource"
+    - status != "archived"
+properties:
+  file.name:
+    displayName: 资源
+  provider:
+    displayName: 云厂商
+  account_id:
+    displayName: 账号
+  service:
+    displayName: 服务
+  resource_type:
+    displayName: 类型
+  environment:
+    displayName: 环境
+  region:
+    displayName: Region
+  status:
+    displayName: 状态
+  owner:
+    displayName: 负责人
+  criticality:
+    displayName: 重要级别
+  expires:
+    displayName: 到期日期
+  renewal:
+    displayName: 续费
+views:
+  - type: table
+    name: 全部活跃资源
+    order:
+      - file.name
+      - provider
+      - account_id
+      - service
+      - environment
+      - region
+      - status
+      - owner
+      - criticality
+      - expires
+      - renewal
+  - type: table
+    name: 30 天内到期
+    filters:
+      and:
+        - expires != null
+        - expires <= today() + "30d"
+        - expires >= today()
+    order:
+      - file.name
+      - service
+      - environment
+      - criticality
+      - expires
+      - owner
+  - type: table
+    name: 已过期
+    filters:
+      and:
+        - expires != null
+        - expires < today()
+    order:
+      - file.name
+      - service
+      - environment
+      - expires
+      - owner
+  - type: table
+    name: 信息待补全
+    filters:
+      or:
+        - owner == null
+        - region == null
+        - environment == null
+    order:
+      - file.name
+      - provider
+      - service
+      - environment
+      - region
+      - owner

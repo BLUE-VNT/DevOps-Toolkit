@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Cloud Vault"
+  short_description: "Manage multi-cloud assets and expiry records"
+  default_prompt: "Use $manage-cloud-vault to update this multi-cloud Obsidian vault safely."

@@ -1,0 +1,637 @@
+/*
+ * Chrome Settings for Obsidian
+ * Scope: Settings modal only
+ * Disable at Settings -> Appearance -> CSS snippets -> chrome-settings
+ */
+
+body.theme-light:not(.is-mobile) .modal.mod-settings {
+  --cs-shell: #f0f4f9;
+  --cs-surface: #ffffff;
+  --cs-surface-hover: #e9eef6;
+  --cs-surface-pressed: #dfe7f2;
+  --cs-primary: #0b57d0;
+  --cs-primary-hover: #0842a0;
+  --cs-primary-container: #d3e3fd;
+  --cs-on-primary-container: #041e49;
+  --cs-text: #1f1f1f;
+  --cs-text-muted: #444746;
+  --cs-border: #dadce0;
+  --cs-control-border: #747775;
+  --cs-hover: rgb(31 31 31 / 6%);
+  --cs-pressed: rgb(31 31 31 / 12%);
+  --cs-danger: #b3261e;
+  --cs-focus: #0b57d0;
+  --cs-shadow: 0 12px 36px rgb(60 64 67 / 18%);
+  --cs-row-shadow: 0 1px 2px rgb(60 64 67 / 10%);
+}
+
+body.theme-dark:not(.is-mobile) .modal.mod-settings {
+  --cs-shell: #1f1f1f;
+  --cs-surface: #282a2d;
+  --cs-surface-hover: #34363a;
+  --cs-surface-pressed: #3c4043;
+  --cs-primary: #a8c7fa;
+  --cs-primary-hover: #d3e3fd;
+  --cs-primary-container: #0842a0;
+  --cs-on-primary-container: #d3e3fd;
+  --cs-text: #e3e3e3;
+  --cs-text-muted: #c4c7c5;
+  --cs-border: rgb(255 255 255 / 10%);
+  --cs-control-border: #8e918f;
+  --cs-hover: rgb(253 252 251 / 10%);
+  --cs-pressed: rgb(253 252 251 / 16%);
+  --cs-danger: #f2b8b5;
+  --cs-focus: #a8c7fa;
+  --cs-shadow: 0 16px 42px rgb(0 0 0 / 48%);
+  --cs-row-shadow: 0 1px 2px rgb(0 0 0 / 32%);
+}
+
+/* Modal shell */
+body:not(.is-mobile) .modal.mod-settings {
+  --modal-width: min(1160px, calc(100vw - 48px));
+  --modal-height: min(760px, calc(100vh - 48px));
+  --modal-max-width: none;
+  --modal-max-height: none;
+  --settings-background: var(--cs-shell);
+  --modal-sidebar-background: var(--cs-shell);
+  --setting-items-background: var(--cs-surface);
+  --setting-items-padding: 0;
+  --setting-items-radius: 8px;
+  --setting-items-border-width: 1px;
+  --setting-items-border-color: var(--cs-border);
+  --input-height: 44px;
+  --button-radius: 18px;
+  --interactive-accent: #0b57d0;
+  --interactive-accent-hover: #0842a0;
+  --text-on-accent: #ffffff;
+  width: min(1160px, calc(100vw - 48px));
+  height: min(760px, calc(100vh - 48px));
+  max-width: none;
+  max-height: none;
+  overflow: hidden;
+  color: var(--cs-text);
+  background: var(--cs-shell);
+  border: 1px solid var(--cs-border);
+  border-radius: 16px;
+  box-shadow: var(--cs-shadow);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .modal-content {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: var(--cs-shell);
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tabs-container {
+  height: 100%;
+  background: var(--cs-shell);
+}
+
+/* Sidebar */
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header {
+  flex: 0 0 264px;
+  width: 264px;
+  padding: 22px 12px 28px;
+  overflow-x: hidden;
+  background: var(--cs-shell);
+  border-right: 0;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header-title {
+  margin: 0 12px 18px;
+  color: var(--cs-text);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header .search-input-container {
+  margin: 0 4px 18px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header .search-input-container input,
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header input[type="search"] {
+  width: 100%;
+  height: 44px;
+  padding-inline: 42px 16px;
+  color: var(--cs-text);
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-control-border);
+  border-radius: 22px;
+  box-shadow: var(--cs-row-shadow);
+  font-size: 14px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header .search-input-container input:hover,
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header input[type="search"]:hover {
+  background: var(--cs-surface-hover);
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header-group {
+  padding: 0;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-header-group-title {
+  margin: 18px 14px 6px;
+  padding: 0;
+  color: var(--cs-text-muted);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item {
+  min-height: 44px;
+  margin: 2px 0;
+  padding: 8px 14px;
+  gap: 12px;
+  color: var(--cs-text);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item:hover {
+  color: var(--cs-text);
+  background: var(--cs-hover);
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item.is-active {
+  color: var(--cs-on-primary-container);
+  background: var(--cs-primary-container);
+  font-weight: 500;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item.is-active:hover {
+  background: color-mix(in srgb, var(--cs-primary-container) 88%, var(--cs-primary) 12%);
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item-icon {
+  display: grid;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  color: currentColor;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item-icon svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.8;
+}
+
+/* Main settings pane */
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content {
+  padding: 30px clamp(24px, 4vw, 56px) 56px;
+  overflow-x: hidden;
+  color: var(--cs-text);
+  background: var(--cs-shell);
+  scrollbar-gutter: stable;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content-container {
+  min-width: 0;
+  background: var(--cs-shell);
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content > :is(
+  .setting-group,
+  .setting-group-search,
+  .setting-items,
+  .setting-item,
+  h2,
+  h3
+) {
+  width: min(96%, 680px);
+  margin-inline: auto;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content.pdf-plus-settings {
+  padding: 0;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content h1,
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content h2,
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content h3 {
+  color: var(--cs-text);
+  font-family: inherit;
+  letter-spacing: normal;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .vertical-tab-content h3,
+body:not(.is-mobile) .modal.mod-settings .setting-item.setting-item-heading .setting-item-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item.setting-item-heading {
+  min-height: auto;
+  margin: 28px auto 10px;
+  padding: 0 4px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body:not(.is-mobile) :where(.modal.mod-settings) :where(.setting-items) {
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-border);
+  border-radius: 8px;
+}
+
+body:not(.is-mobile) :where(.modal.mod-settings .setting-items) > .setting-item:not(.setting-item-heading),
+body:not(.is-mobile) :where(.modal.mod-settings .vertical-tab-content) > .setting-item:not(.setting-item-heading) {
+  min-height: 64px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  gap: 20px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--cs-border);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+body:not(.is-mobile) :where(.modal.mod-settings) :where(.setting-items) > .setting-item:last-child {
+  border-bottom: 0;
+}
+
+/* Settings rendered without a setting-items group keep a quiet standalone surface. */
+body:not(.is-mobile) :where(.modal.mod-settings) .vertical-tab-content > :where(.setting-item:not(.setting-item-heading)) {
+  margin-bottom: 12px;
+  background: var(--cs-surface);
+  border: 1px solid var(--cs-border);
+  border-radius: 8px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item-info {
+  min-width: 0;
+  padding: 2px 0;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item-name {
+  color: var(--cs-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item-description {
+  max-width: 58ch;
+  margin-top: 3px;
+  color: var(--cs-text-muted);
+  font-size: 13px;
+  line-height: 19px;
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings .setting-item-control) {
+  flex: 0 1 auto;
+  min-width: 0;
+  gap: 8px;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item.mod-search-setting {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item.mod-search-setting .setting-item-control,
+body:not(.is-mobile) .modal.mod-settings .setting-item.mod-search-setting .search-input-container {
+  width: 100%;
+  max-width: none;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-item.mod-search-setting input[type="search"] {
+  height: 44px;
+  padding-inline: 42px 16px;
+  background: var(--cs-surface);
+  border-color: var(--cs-control-border);
+  border-radius: 22px;
+  box-shadow: var(--cs-row-shadow);
+}
+
+/* Inputs and controls */
+body:not(.is-mobile) .modal.mod-settings input[type="text"],
+body:not(.is-mobile) .modal.mod-settings input[type="email"],
+body:not(.is-mobile) .modal.mod-settings input[type="number"],
+body:not(.is-mobile) .modal.mod-settings input[type="password"],
+body:not(.is-mobile) .modal.mod-settings input[type="search"],
+body:not(.is-mobile) .modal.mod-settings textarea,
+body:not(.is-mobile) .modal.mod-settings select,
+body:not(.is-mobile) .modal.mod-settings .dropdown {
+  min-height: 44px;
+  color: var(--cs-text);
+  background-color: var(--cs-surface);
+  border: 1px solid var(--cs-control-border);
+  border-radius: 8px;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+body:not(.is-mobile) .modal.mod-settings input[type="text"],
+body:not(.is-mobile) .modal.mod-settings input[type="email"],
+body:not(.is-mobile) .modal.mod-settings input[type="number"],
+body:not(.is-mobile) .modal.mod-settings input[type="password"],
+body:not(.is-mobile) .modal.mod-settings textarea {
+  padding-inline: 12px;
+}
+
+body:not(.is-mobile) .modal.mod-settings textarea {
+  min-height: 88px;
+  padding-block: 9px;
+  line-height: 20px;
+  resize: vertical;
+}
+
+body:not(.is-mobile) .modal.mod-settings input::placeholder,
+body:not(.is-mobile) .modal.mod-settings textarea::placeholder {
+  color: var(--cs-text-muted);
+  opacity: 1;
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings button:not(.clickable-icon)),
+:where(body:not(.is-mobile) .modal.mod-settings .clickable-icon) {
+  min-height: 44px;
+  color: var(--cs-primary);
+  background: transparent;
+  border: 1px solid var(--cs-border);
+  border-radius: 18px;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings button:not(.clickable-icon)) {
+  padding: 9px 16px;
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings .clickable-icon) {
+  min-width: 44px;
+  padding: 10px;
+  border-color: transparent;
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings button:not(.clickable-icon):hover),
+:where(body:not(.is-mobile) .modal.mod-settings .clickable-icon:hover) {
+  color: var(--cs-primary-hover);
+  background: var(--cs-hover);
+  border-color: var(--cs-primary);
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings .clickable-icon:hover) {
+  border-color: transparent;
+}
+
+body:not(.is-mobile) .modal.mod-settings button.mod-cta {
+  color: #ffffff;
+  background: #0b57d0;
+  border-color: #0b57d0;
+}
+
+body:not(.is-mobile) .modal.mod-settings button.mod-cta:hover {
+  color: #ffffff;
+  background: #0842a0;
+  border-color: #0842a0;
+}
+
+body:not(.is-mobile) .modal.mod-settings button.mod-warning,
+body:not(.is-mobile) .modal.mod-settings button.mod-destructive {
+  color: var(--cs-danger);
+  border-color: color-mix(in srgb, var(--cs-danger) 55%, transparent);
+}
+
+body:not(.is-mobile) .modal.mod-settings button.mod-warning:hover,
+body:not(.is-mobile) .modal.mod-settings button.mod-destructive:hover {
+  color: var(--cs-danger);
+  background: color-mix(in srgb, var(--cs-danger) 10%, transparent);
+  border-color: var(--cs-danger);
+}
+
+body:not(.is-mobile) .modal.mod-settings button:disabled,
+body:not(.is-mobile) .modal.mod-settings input:disabled,
+body:not(.is-mobile) .modal.mod-settings select:disabled,
+body:not(.is-mobile) .modal.mod-settings textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+body:not(.is-mobile) .modal.mod-settings .checkbox-container {
+  position: relative;
+  background: color-mix(in srgb, var(--cs-text-muted) 60%, transparent);
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color 160ms ease;
+}
+
+body:not(.is-mobile) .modal.mod-settings .checkbox-container::before {
+  position: absolute;
+  inset: -12px -6px;
+  content: "";
+}
+
+body:not(.is-mobile) .modal.mod-settings .checkbox-container.is-enabled {
+  background: var(--cs-primary);
+}
+
+body:not(.is-mobile) .modal.mod-settings input[type="range"] {
+  min-height: 44px;
+  accent-color: var(--cs-primary);
+  cursor: pointer;
+}
+
+:where(body:not(.is-mobile) .modal.mod-settings input[type="color"]) {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px;
+  border: 1px solid var(--cs-control-border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body:not(.is-mobile) .modal.mod-settings progress {
+  accent-color: var(--cs-primary);
+}
+
+body:not(.is-mobile) .modal.mod-settings a {
+  color: var(--cs-primary);
+  font-weight: 500;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+body:not(.is-mobile) .modal.mod-settings a:hover {
+  color: var(--cs-primary-hover);
+}
+
+body:not(.is-mobile) .modal.mod-settings .hotkey-list-container,
+body:not(.is-mobile) .modal.mod-settings .community-plugin-search {
+  width: min(96%, 680px);
+  margin-inline: auto;
+}
+
+body:not(.is-mobile) .modal.mod-settings .setting-hotkey {
+  color: var(--cs-text-muted);
+  background: var(--cs-shell);
+  border: 1px solid var(--cs-border);
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+/* Close affordance */
+body:not(.is-mobile) .modal.mod-settings .modal-close-button {
+  top: 14px;
+  inset-inline-end: 14px;
+  display: grid;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0;
+  place-items: center;
+  color: var(--cs-text-muted);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+}
+
+/* Keyboard focus */
+body:not(.is-mobile) .modal.mod-settings :where(
+  button,
+  input,
+  select,
+  textarea,
+  a,
+  .clickable-icon,
+  .checkbox-container,
+  .vertical-tab-nav-item
+):focus-visible {
+  outline: 2px solid var(--cs-focus) !important;
+  outline-offset: 2px;
+  box-shadow: none !important;
+}
+
+/* Compact desktop windows; Obsidian mobile keeps its native layout. */
+@media (max-width: 900px) {
+  body:not(.is-mobile) .modal.mod-settings {
+    width: calc(100vw - 24px);
+    height: calc(100vh - 24px);
+    border-radius: 12px;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings .vertical-tab-header {
+    flex-basis: 220px;
+    width: 220px;
+    padding-inline: 8px;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings .vertical-tab-content {
+    padding-inline: 24px;
+  }
+
+}
+
+@media (max-width: 720px) {
+  body:not(.is-mobile) .modal.mod-settings {
+    width: 100vw;
+    height: 100vh;
+    border: 0;
+    border-radius: 0;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings .vertical-tab-content {
+    padding: 20px 16px 40px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  body:not(.is-mobile) .modal.mod-settings .vertical-tabs-container {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings .vertical-tab-header {
+    flex: 0 0 auto;
+    width: 100%;
+    max-height: 38vh;
+    padding: 12px 8px;
+    overflow-y: auto;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings .vertical-tab-content-container {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings .vertical-tab-content {
+    padding: 20px 12px 32px;
+    overflow-x: auto;
+  }
+
+  body:not(.is-mobile) :where(.modal.mod-settings .setting-items) > .setting-item:not(.setting-item-heading),
+  body:not(.is-mobile) :where(.modal.mod-settings .vertical-tab-content) > .setting-item:not(.setting-item-heading) {
+    flex-wrap: wrap;
+  }
+
+  :where(body:not(.is-mobile) .modal.mod-settings .setting-item-control) {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  body:not(.is-mobile) :where(.modal.mod-settings) :where(input, select, textarea, .dropdown) {
+    max-width: 100%;
+  }
+}
+
+@media (forced-colors: active) {
+  body:not(.is-mobile) .modal.mod-settings,
+  body:not(.is-mobile) .modal.mod-settings .setting-item,
+  body:not(.is-mobile) .modal.mod-settings button:not(.clickable-icon),
+  body:not(.is-mobile) .modal.mod-settings .clickable-icon,
+  body:not(.is-mobile) .modal.mod-settings input,
+  body:not(.is-mobile) .modal.mod-settings select,
+  body:not(.is-mobile) .modal.mod-settings textarea {
+    border-color: CanvasText;
+    forced-color-adjust: auto;
+  }
+
+  body:not(.is-mobile) .modal.mod-settings :focus-visible {
+    outline: 2px solid Highlight !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:not(.is-mobile) .modal.mod-settings *,
+  body:not(.is-mobile) .modal.mod-settings *::before,
+  body:not(.is-mobile) .modal.mod-settings *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "main": {
+    "id": "6c3aba1ea6d875de",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed23af37b0c2ea03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23f0bfb9ebc78166",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Index"
+            }
+          },
+          {
+            "id": "f6714e4c96235fc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "30-Resources/阿里云运行手册/域名续费操作手册.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "域名续费操作手册"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "309b3f0a4385fae7",
+    "type": "split",
+    "children": [
+      {
+        "id": "fbb655a9892efd31",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90ee72edf074fc17",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "29033bb2ab6408c8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "887d8eb563cd79de",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "0d06c6fa360995c4",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "recent-files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ff03e422ee86fb63",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6a5cc42882e6538",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "183963a863291527",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "c0006392491fbe25",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "0d34325d627782ee",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e0448e7015a9b501",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "033b698d46605e2e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "20-Areas/云资源运营/10-Providers/Alibaba Cloud/Accounts/hlfksy/Account Index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "9190e095736fa4fc",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian42-brat:BRAT": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-importer:Open Importer": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "active": "f6714e4c96235fc6",
+  "lastOpenFiles": [
+    "30-Resources/阿里云运行手册/域名到期日历.md",
+    "10-Projects/2026-08 阿里云资源续费/项目主页.md",
+    "00-Inbox/Inbox Index.md",
+    "10-Projects/阿里云基础设施初始化/项目主页.md",
+    "30-Resources/阿里云运行手册/域名续费操作手册.md",
+    "30-Resources/Resources Index.md",
+    "20-Areas/云资源运营/00-Dashboards/云资源台账.base",
+    "70-Maps/Cloud Map.md",
+    "Index.md",
+    "70-Maps/目录结构与 Agent 协作指南.md",
+    "80-Templates/Calendar 到期提醒模板.md",
+    "80-Templates/云资源模板.md",
+    "80-Templates/云账号模板.md",
+    "20-Areas/GPT账号管理/数字账号月度账单.md",
+    "20-Areas/云资源运营/10-Providers/AWS/AWS Index.md",
+    "20-Areas/云资源运营/10-Providers/AWS/AWS Resources.base",
+    "20-Areas/GPT账号管理/GPT账号管理 Index.md",
+    "20-Areas/云资源运营/00-Dashboards/运营工作台.md",
+    "20-Areas/云资源运营/30-Operations/Changes/2026-08-24-HFXZYX-提现-5941.41.md",
+    "20-Areas/云资源运营/30-Operations/Changes/2026-08-24-HFQTJKJ-提现-293.29.md",
+    "20-Areas/GPT账号管理/Accounts/ops@claudemax.org/Account Index.md",
+    "20-Areas/GPT账号管理/Accounts/shishizhaji@gmail.com/Account Index.md",
+    "20-Areas/GPT账号管理/Accounts/guguji@claudemax.org/Payments/2026-08-18-ChatGPT-Pro-20x.md",
+    "20-Areas/GPT账号管理/Accounts/guguji@claudemax.org/Payments",
+    "20-Areas/GPT账号管理/Accounts/guguji@claudemax.org/Account Index.md",
+    "20-Areas/GPT账号管理/Accounts/guguji@claudemax.org",
+    "20-Areas/GPT账号管理/Accounts/tieguanyin@claudemax.org/Payments/2026-08-17-ChatGPT-Pro-20x.md",
+    "20-Areas/GPT账号管理/Accounts/tieguanyin@claudemax.org/Payments",
+    "20-Areas/GPT账号管理/Accounts/tieguanyin@claudemax.org/Account Index.md",
+    "20-Areas/GPT账号管理/Accounts/tieguanyin@claudemax.org",
+    "20-Areas/GPT账号管理/Accounts/wangwu@claudemax.org/Account Index.md",
+    "20-Areas/GPT账号管理/Accounts/wangwu@claudemax.org",
+    "20-Areas/GPT账号管理/Accounts/lisi@claudemax.org/Payments/2026-07-24-ChatGPT-Pro-20x.md",
+    "20-Areas/GPT账号管理/Accounts/lisi@claudemax.org/Payments",
+    "20-Areas/GPT账号管理/Accounts/lisi@claudemax.org",
+    "20-Areas/GPT账号管理/Accounts/zhangsan@claudemax.org/Payments"
+  ]
+}
